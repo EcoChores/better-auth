@@ -4,8 +4,7 @@
   "scripts": {
     "dev": "bun run --hot src/index.ts",
     "build": "bun build ./src/index.ts --compile --outfile server",
-    "start": "./server",
-    "postinstall": "npm run build"
+    "start": "./server"
   },
   "dependencies": {
     "better-auth": "^1.2.7",
