@@ -1,15 +1,15 @@
 {
-  "$schema": "https://schema.railpack.com",
-  "provider": "node",
-  "packages": {
-    "bun": "1.2.5",
-    "node": "22.14.0"
-  },
-  "build": {
-    "builder": "bun",
-    "cmd": "bun install && npm run build"
-  },
-  "start": {
-    "cmd": "./server"
-  }
+	"$schema": "https://schema.railpack.com",
+	"provider": "node",
+	"packages": {
+		"bun": "1.2.5",
+		"node": "22.14.0"
+	},
+	"build": {
+		"builder": "bun",
+		"cmd": "bun install --frozen-lockfile && bun run build"
+	},
+	"start": {
+		"cmd": "./server"
+	}
 }
